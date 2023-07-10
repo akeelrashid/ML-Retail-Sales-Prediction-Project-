@@ -26,14 +26,16 @@ EDA helps us to extract some useful insights from the data.some of the insights 
 *  **Promo,Open and customer** has positive correlation with **Sales** means that if the shop is ruuning any promo more customers will visit the store there will be more sales
 * **State holiday** has very low negative correlation with sales as sales is not affected by state holiday same case with the school holiday
 
-* I have implemented Linear Regression,Ridge Regression,Lasso Regression,Decision Tree,Random Forest and XGBoost model on my data. Based on the performance of all the models, i have selected XGBoost model as the final prediction model. The XGBoost model outperformed the other models in several key aspects, making it the preferred choice for prediction.
+  I have implemented **Linear Regression,Ridge Regression,Lasso Regression,Decision Tree,Random Forest and XGBoost** model on my data. Based on the performance of all the models, i have selected **XGBoost** model as the final prediction model. The XGBoost model outperformed the other models in several key aspects, making it the preferred choice for prediction.
 
-The XGBoost model achieved high R2 score of 0.9819 on the test data and r2 score of o.99 in trainig dataset
+ The XGBoost model with **learning rate of 0.1 and max_depth of 15 and 100 estimators**, outperformed the other models in several key aspects, making it the preferred choice for prediction.
 
-also the XGBoost model achieved lower Mean Squared Error (MSE) and Root Mean Squared Error (RMSE) values compared to the other models. With an MSE of 185,145.49 and an RMSE of 430.29, the XGBoost model exhibits smaller prediction errors and improved accuracy in predicting the target variable.
+First of all the XGBoost model achieved high **r2 score** of around **98%** on the **training** data and **r2 score** of around **97%** in test dataset
+
+also the XGBoost model achieved **lower Mean Squared Error** (MSE) and **Root Mean Squared Error (RMSE)** values compared to the other models. With an MSE of 4.7, and an RMSE of 2.7, the XGBoost model exhibits smaller prediction errors and improved accuracy in predicting the target variable.
 
 As the XGBoost model displayed consistent performance across various evaluation metrics, including the R2 score, MSE, and RMSE. Its high performance on both the training and test data indicates good capabilities and reduces the risk of overfitting.
 
-Additionally the residuals analysis revealed mean and median values of 0.45 and -2.73, respectively.The well-behaved residuals indicate that the XGBoost model effectively captures the underlying patterns in the data and minimizes systematic errors.
+Additionally the residuals analysis revealed mean and median values of 0 and -.09, respectively.The well-behaved residuals indicate that the XGBoost model effectively captures the underlying patterns in the data and minimizes systematic errors.
 
 Considering the model's strong predictive performance, lower prediction errors, and consistency across evaluation metrics, the XGBoost model is the preferred choice as the final prediction model.
